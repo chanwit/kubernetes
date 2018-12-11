@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+source ske-version-defs
+
+export REGISTRY=gcr.io/ske-release
+export VERSION=$KUBE_GIT_VERSION
+
+hack/dev-push-hyperkube.sh
